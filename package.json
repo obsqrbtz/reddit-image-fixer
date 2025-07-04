@@ -5,7 +5,7 @@
   "main": "src/content.ts",
   "scripts": {
     "build": "tsc && npm run copy-static",
-    "copy-static": "cpx \"src/*.{html,css}\" dist/"
+    "copy-static": "cpx \"src/*.{html,css}\" dist/ && cpx \"manifest.json\" dist/ && cpx \"icons/**/*\" dist/icons/"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.123",
@@ -20,6 +20,6 @@
     "full-size",
     "full-resolution"
   ],
-  "author": "Your Name",
+  "author": "Daniel Dada",
   "license": "MIT"
 }
