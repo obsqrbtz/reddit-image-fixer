@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Image Fixer for Reddit",
+  "name": "Reddit Image Fixer",
   "version": "1.0.0",
   "description": "Load full-size images on Reddit",
   "permissions": [
