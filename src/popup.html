@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="popup.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit Image Fixer</title>
+    <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
-    <label>
-        <input type="checkbox" id="toggle" />
-        Enable Image Fixer
-    </label>
+    <div class="card">
+        <div class="header">
+            <div class="icon">
+                <img src="icons/icon128.png" alt="Icon" />
+            </div>
+            <div class="text">
+                <h1>Reddit Image Fixer</h1>
+                <p>Get rid of low-res pictures</p>
+            </div>
+        </div>
+
+        <div class="status-row">
+            <span>Enabled</span>
+            <label class="switch">
+                <input type="checkbox" id="toggle" />
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <hr />
+
+        <div class="footer">
+            <a href="#" class="about-link" id="aboutLink">❔ About</a>
+        </div>
+    </div>
+    <div class="info-popup" id="infoPopup">
+        <p>🔖 Version: <span id="extVersion">...</span></p>
+        <p><a href="https://github.com/obsqrbtz/reddit-image-fixer" target="_blank">🌐 GitHub</a></p>
+    </div>
     <script src="popup.js"></script>
 </body>
 
