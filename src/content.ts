@@ -68,7 +68,7 @@ function replaceImagesAndLinks(root: Document | Node = document): void {
   });
 }
 
-chrome.storage.local.get('enabled', data => {
+chrome.storage.sync.get('enabled', data => {
   if (data.enabled === false) return;
   replaceImagesAndLinks();
 
