@@ -1,6 +1,6 @@
 {
   "name": "image-fixer-for-reddit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load full-size images on Reddit",
   "main": "src/content.ts",
   "scripts": {
